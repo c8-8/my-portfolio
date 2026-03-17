@@ -480,6 +480,12 @@
     grid-template-columns: 1fr;
   }
 
+  /* 效能優化：手機版移除耗能的 hover 陰影效果 */
+  .project-showcase-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }

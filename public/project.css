@@ -357,6 +357,12 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  /* 效能優化：手機版簡化陰影效果 */
+  .polaroid-image {
+    box-shadow: 4px 4px 0px #f7f6f4;
+    padding: 8px;
+  }
+
   .project-hero {
     grid-template-columns: 1fr;
     padding-top: 8rem;
@@ -364,6 +370,24 @@
 
   .project-two-col {
     grid-template-columns: 1fr;
+  }
+
+  .project-hero-title {
+    font-size: clamp(2.2rem, 10vw, 3.5rem);
+  }
+
+  .project-hero-title span {
+    line-height: 1.3;
+    display: inline-block;
+  }
+
+  .project-body {
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+  }
+
+  .project-section {
+    margin-bottom: var(--spacing-lg);
   }
 }
 
