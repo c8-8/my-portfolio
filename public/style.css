@@ -793,10 +793,10 @@ body {
   }
 
   .section-title {
-    font-size: 1.875rem;
+    font-size: 1.75rem; /* 28px */
   }
   .project-card-title {
-    font-size: 1.1rem;
+    font-size: 1rem; /* 16px */
   }
 
   .home-quote {
@@ -849,7 +849,8 @@ body {
   }
 
   .hero-name {
-    font-size: 
+    font-size: 2.75rem; /* 44px */
+  }
 
   .about-hero {
     grid-template-columns: 1fr;

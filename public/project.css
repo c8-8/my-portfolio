@@ -381,7 +381,7 @@
   }
 
   .project-hero-title {
-    font-size: 2.5rem;
+    font-size: 2.375rem; /* 38px */
   }
 
   .project-hero-title span {
