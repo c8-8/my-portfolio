@@ -827,6 +827,14 @@ body {
     transition-delay: 0.1s !important;
   }
 
+  /* 手機版選單標題優化 */
+  .nav-overlay-links a {
+    font-size: clamp(2rem, 10vw, 2.5rem);
+    white-space: normal;
+    line-height: 1.2;
+    padding: 0 1.5rem; /* 增加左右邊距避免貼邊 */
+  }
+
   .home-hero {
     grid-template-columns: 1fr;
     padding-top: 7rem;

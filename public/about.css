@@ -511,6 +511,7 @@
   /* 手機版圖片顯示優化 */
   .project-showcase-image img, .experience-image img {
     object-fit: contain;
+    max-height: 60vh;
   }
 
   .skills-grid {
@@ -542,7 +543,9 @@
   }
 
   .project-showcase-image {
-    aspect-ratio: 2245 / 2194;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
   }
 
   .project-showcase-title {
@@ -559,7 +562,9 @@
   }
 
   .experience-image {
-    aspect-ratio: 1120 / 1097;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
   }
 
   .skills-grid {

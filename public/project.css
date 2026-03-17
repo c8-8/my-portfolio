@@ -366,9 +366,12 @@
   /* 手機版圖片顯示優化 */
   .polaroid-image, .project-hero-image {
     background-color: var(--color-surface);
+    aspect-ratio: auto !important; /* 覆蓋 inline style */
+    height: auto !important; /* 覆蓋 inline style */
   }
   .polaroid-image img, .project-hero-image img {
     object-fit: contain;
+    max-height: 60vh;
   }
 
   .project-hero {
