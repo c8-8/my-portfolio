@@ -789,6 +789,14 @@ body {
   .project-grid {
     grid-template-columns: 1fr;
     max-width: 600px;
+    gap: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.875rem;
+  }
+  .project-card-title {
+    font-size: 1.1rem;
   }
 
   .home-quote {
@@ -841,8 +849,7 @@ body {
   }
 
   .hero-name {
-    font-size: 3rem;
-  }
+    font-size: 
 
   .about-hero {
     grid-template-columns: 1fr;
