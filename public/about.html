@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — 友柔 Yoei</title>
+  <meta name="description" content="關於友柔 Yoei：資訊管理系學生、UI/UX 設計師與網頁開發者。" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    :root {
+      --color-bg: #fdfdfc; /* 柔和的米白背景 */
+      --color-surface: #f9f9f7; /* 區塊的背景色 */
+      --color-ink: #2c2c2c; /* 更深、高對比的文字顏色 */
+      --color-ink-muted: #666; /* 提高可讀性的輔助文字顏色 */
+      --color-ink-light: #999; /* 標籤的淺色文字 */
+      --color-border: #e9e9e9; /* 更細緻的邊框顏色 */
+      --color-accent: #c8a96e; /* 維持原有的金色調 */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true"></div>
+
+  <!-- Page Loader -->
+  <div class="page-loader" aria-hidden="true">
+    <span class="loader-text">About</span>
+  </div>
+
+  <!-- Page Transition -->
+  <div class="page-transition slide-in" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Yoei Home">友柔 Yoei</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project-mmbread.html">Mm.Bread</a></li>
+      <li><a href="project-yomap.html">雲座標之空間資訊應用</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="nav-overlay" role="dialog" aria-label="Mobile menu">
+    <ul class="nav-overlay-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project-mmbread.html">Mm.Bread</a></li>
+      <li><a href="project-yomap.html">雲座標之空間資訊應用</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ==============================
+         HERO
+         ============================== -->
+    <header class="about-hero" aria-labelledby="about-title">
+      <div class="about-hero-left">
+        <p class="about-hero-label reveal">Self Introduction</p>
+        <h1 class="about-hero-title reveal reveal-delay-1" id="about-title">
+          Hello,<br />I'm<br />黃友柔
+        </h1>
+      </div>
+      <div class="about-hero-right reveal reveal-delay-2">
+        <p class="about-hero-intro">
+          我是一位資訊管理系學生，也是設計師與開發者。
+          我相信科技可以改變生活，設計可以感動人心。
+          透過程式與視覺的結合，我致力於打造解決實際問題的產品。
+        </p>
+      </div>
+    </header>
+
+    <div class="divider" style="margin: 0 2.5rem;"></div>
+
+    <!-- ==============================
+         ABOUT BODY SECTIONS
+         ============================== -->
+    <section class="about-body" aria-label="About details">
+
+      <!-- ============ EDUCATION ============ -->
+      <div class="about-section">
+        <div class="section-header-simple reveal">
+          <p class="section-label">Education</p>
+          <h2 class="section-heading reveal reveal-delay-1">學歷歷程</h2>
+        </div>
+
+        <div class="education-timeline reveal reveal-delay-2">
+          <!-- Education Item 1: 雲林科技大學 -->
+          <div class="education-item">
+            <div class="education-front">
+              <div class="education-badge">二技</div>
+              <div class="education-content">
+                <h3 class="education-school">國立雲林科技大學</h3>
+                <p class="education-major">資訊管理系</p>
+                <p class="education-year">2024 - 2026</p>
+              </div>
+            </div>
+            <div class="education-back">
+              <p class="education-description">
+                在求學過程中，我始終對於「將專案需求轉化為實體應用」抱持強烈熱忱。每當將抽象的功能需求，透過程式邏輯實踐為具備互動性的系統時，那種成就感讓我確信這是我熱愛的領域。
+              </p>
+            </div>
+          </div>
+
+          <!-- Education Item 2: 臺中科技大學 -->
+          <div class="education-item">
+            <div class="education-front">
+              <div class="education-badge">五專</div>
+              <div class="education-content">
+                <h3 class="education-school">國立臺中科技大學</h3>
+                <p class="education-major">資訊管理系</p>
+                <p class="education-year">2019 - 2024</p>
+              </div>
+            </div>
+            <div class="education-back">
+              <p class="education-description">
+                在臺中科技大學五專部期間，我廣泛涉獵資管領域的多元課程。技術層面，透過物件導向程式設計與前端網頁開發，我建立了嚴謹的邏輯思維；管理層面，系統分析與設計與軟體工程等課程，則讓我學會從宏觀角度規劃資訊系統。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- ============ SELECTED WORKS ============ -->
+      <div class="about-section">
+        <div class="section-header-simple reveal">
+          <p class="section-label">Selected Works</p>
+          <h2 class="section-heading reveal reveal-delay-1">專案成就</h2>
+        </div>
+
+        <div class="projects-showcase">
+          <!-- Project 1: YoMap -->
+          <div class="project-showcase-card reveal reveal-delay-1">
+            <div class="project-showcase-content">
+              <div class="project-showcase-text">
+                <div class="project-showcase-header">
+                  <h3 class="project-showcase-title">雲座標之空間資訊應用</h3>
+                  <div class="project-showcase-tags">
+                    <span class="showcase-tag">雲科大資管</span>
+                    <span class="showcase-tag">3D App</span>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-top: 0.5rem; font-size: 0.8rem; margin-bottom: 1rem;">
+                  <span style="display: flex; align-items: center; gap: 0.35rem; color: var(--color-accent); font-weight: 500;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M9.5 14.5A2.5 2.5 0 0 1 7 12V9c0-2.2 1.8-4 4-4h2c2.2 0 4 1.8 4 4v3a2.5 2.5 0 0 1-2.5 2.5z"/></svg>
+                    <span>2024 雲林設計獎</span>
+                  </span>
+                  <span style="width: 1px; height: 12px; background-color: var(--color-border);" aria-hidden="true"></span>
+                  <a href="https://yunbao-20.github.io/yomap/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.25rem; color: var(--color-ink-muted); text-decoration: none; transition: color 0.3s ease;" onmouseenter="this.style.color='var(--color-ink)'" onmouseleave="this.style.color='var(--color-ink-muted)'">
+                    <span>作品官網 ↗</span>
+                  </a>
+                </div>
+                <p class="project-showcase-desc">
+                  二技畢業專題，擔任組長。<br>面對 Google Maps 缺乏校內路網資料的困境，我主導策略轉向，自學 Blender 3D 建模從零構建校園 GIS 圖資。<br>透過「2D 平面圖層 + 仿射變換演算法」優化，成功將資料從 8.32GB 降至 MB 級，實現 3 秒快速載入。
+                </p>
+                <div class="project-showcase-details">
+                  <p><strong>核心技術：</strong>Blender、GIS、OpenStreetMap、2D 仿射變換演算法</p>
+                  <p><strong>角色：</strong>組長、全端開發、UI/UX 優化、性能優化</p>
+                </div>
+                <a href="project-yomap.html" class="showcase-btn">
+                  View Project →
+                </a>
+              </div>
+              <div class="project-showcase-image">
+                <img src="img/placeholder1.png" alt="YoMap 專案" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Mm.Bread -->
+          <div class="project-showcase-card reveal reveal-delay-2">
+            <div class="project-showcase-content">
+              <div class="project-showcase-text">
+                <div class="project-showcase-header">
+                  <h3 class="project-showcase-title">Mm.Bread 瑪利MAMA</h3>
+                  <div class="project-showcase-tags">
+                    <span class="showcase-tag">中科大資管</span>
+                    <span class="showcase-tag">公益電商</span>
+                  </div>
+                </div>
+                <p class="project-showcase-desc">
+                  五專畢業專題。針對瑪利亞基金會進行數位轉型，開發訂購系統。<br>主要負責跨載具介面設計（UI/UX）與後端功能開發，包括行動端 App 與網頁介面優化。<br>這段經歷讓我深刻體會到技術的價值在於解決實務痛點。
+                </p>
+                <div class="project-showcase-details">
+                  <p><strong>核心技術：</strong>MIT App Inventor、PHP、MySQL、Responsive Design</p>
+                  <p><strong>角色：</strong>UI/UX 設計、前端開發</p>
+                </div>
+                <a href="project-mmbread.html" class="showcase-btn">
+                  View Project →
+                </a>
+              </div>
+              <div class="project-showcase-image">
+                <img src="img/placeholder2.png" alt="Mm.Bread 專案" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <div class="about-section">
+        <div class="section-header-simple reveal">
+          <p class="section-label">Experience</p>
+          <h2 class="section-heading reveal reveal-delay-1">實務經歷</h2>
+        </div>
+
+        <div class="experience-card reveal reveal-delay-2">
+          <div class="experience-content">
+            <div class="experience-text">
+              <div class="experience-header">
+                <h3 class="experience-title">5G AI 全球行動通訊展</h3>
+                <p class="experience-period">Summer 2024 | 現場人員</p>
+              </div>
+              <p class="experience-desc">
+                在五專畢業與二技入學之間，參與由數位發展部主辦的「5G AI 跨域藝術展」。<br>擔任現場導覽人員，親眼見證 AI 根據觀眾心律生成個人化藝術作品的系統。
+                <br>負責第一線使用者需求引導與技術諮詢，協助展示 AI 技術應用。
+              </p>
+              <p class="experience-desc">
+                這段經歷讓我看到大數據與 AI 結合的巨大潛力。我觀察到使用者對新技術的困惑，進而思考如何讓 AI 系統在提供服務時，能更清楚地解釋運作邏輯，建立使用者信任。<br>
+                這份體驗深化了我對「情境感知設計」的理解，也為二技專題的介面設計帶來啟發。
+              </p>
+              <div class="experience-tags">
+                <span class="about-tag">User Communication</span>
+                <span class="about-tag">AI Technology</span>
+                <span class="about-tag">Event Experience</span>
+                <span class="about-tag">Design Insight</span>
+              </div>
+            </div>
+            <div class="experience-image">
+              <img src="img/placeholder3.png" alt="5G AI 全球行動通訊展" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==============================
+         SKILLS SECTION
+         ============================== -->
+    <section class="about-skills" aria-labelledby="skills-heading">
+      <div class="divider-short reveal"></div>
+      <h2 class="section-title reveal reveal-delay-1" id="skills-heading">Skills &amp; Tools</h2>
+
+      <div class="skills-grid">
+        <div class="skill-item reveal reveal-delay-1">
+          <p class="skill-name">UI / UX Design</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="88%"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-2">
+          <p class="skill-name">Frontend Development</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85%"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-3">
+          <p class="skill-name">HTML5 / CSS3</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85%"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-1">
+          <p class="skill-name">JavaScript / React</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="75%"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-2">
+          <p class="skill-name">Flutter & Dart</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="70%"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-3">
+          <p class="skill-name">Blender (3D Modeling)</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="72%"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-1">
+          <p class="skill-name">Figma / UI Design Tools</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="83%"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-2">
+          <p class="skill-name">Database / SQL</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="78%"></div></div>
+        </div>
+        <div class="skill-item reveal reveal-delay-3">
+          <p class="skill-name">User Research & Analysis</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="80%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         PROJECTS TEASER
+         ============================== -->
+    <section style="padding: 6rem 2.5rem; text-align:center;" aria-label="Projects link">
+      <div class="divider-short reveal" style="margin: 0 auto 2rem;"></div>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-bottom:2rem;">View My Work</h2>
+      <div style="display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap;" class="reveal reveal-delay-2">
+        <a href="project-mmbread.html" style="
+          display:inline-flex; align-items:center; gap:0.75rem;
+          padding: 0.85rem 2rem;
+          background: var(--color-ink);
+          color: var(--color-bg);
+          font-size: 0.75rem;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          text-decoration: none;
+          transition: background 0.3s ease;
+        " onmouseenter="this.style.background='var(--color-accent)'"
+           onmouseleave="this.style.background='var(--color-ink)'">
+          Mm.Bread Website →
+        </a>
+        <a href="project-yomap.html" style="
+          display:inline-flex; align-items:center; gap:0.75rem;
+          padding: 0.85rem 2rem;
+          background: transparent;
+          color: var(--color-ink);
+          font-size: 0.75rem;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          text-decoration: none;
+          border: 1px solid var(--color-ink);
+          transition: background 0.3s ease, color 0.3s ease;
+        " onmouseenter="this.style.background='var(--color-ink)'; this.style.color='var(--color-bg)'"
+           onmouseleave="this.style.background='transparent'; this.style.color='var(--color-ink)'">
+          雲座標之空間資訊應用 →
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-copy">© 2026 黃友柔 Yoei. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project-yomap.html">雲座標之空間資訊應用</a></li>
+      <li><a href="project-mmbread.html">Mm.Bread</a></li>
+    </ul>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
