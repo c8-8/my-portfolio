@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>友柔 Yoei — Portfolio</title>
+  <meta name="description" content="友柔 Yoei 的個人作品集。資訊管理系學生，擅長 UI/UX、App 開發與網頁設計。" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+
+
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true"></div>
+
+  <!-- Page Loader -->
+  <div class="page-loader" aria-hidden="true"></div>
+
+  <!-- Page Transition -->
+  <div class="page-transition slide-in" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Yoei Home">友柔 Yoei</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project-mmbread.html">Mm.Bread</a></li>
+      <li><a href="project-yomap.html">雲座標之空間資訊應用</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="nav-overlay" role="dialog" aria-label="Mobile menu">
+    <ul class="nav-overlay-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project-mmbread.html">Mm.Bread</a></li>
+      <li><a href="project-yomap.html">雲座標之空間資訊應用</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+
+    <!-- ==============================
+         HERO SECTION
+         ============================== -->
+    <section class="home-hero" aria-labelledby="hero-name">
+      <div class="hero-bg-text" aria-hidden="true">YOEI</div>
+
+      <div class="hero-left">
+        <p class="hero-label reveal">Portfolio 2026</p>
+        <h1 class="hero-name reveal reveal-delay-1" id="hero-name">
+          友柔
+          <span>Yoei</span>
+        </h1>
+        <p class="hero-tagline reveal reveal-delay-2">
+          設計與開發之間的橋樑。<br />
+          National Yunlin University of Science &amp; Technology<br />
+          Information Management
+        </p>
+      </div>
+
+      <div class="hero-right">
+        <div class="img-wrap hero-image-block reveal reveal-delay-3">
+          <img src="img/map_1.png" alt="YoMap 3D 渲染圖" class="hero-portrait" style="filter: grayscale(20%) contrast(1.1);">
+          <div class="image-tag-overlay">Visualizing the Future / 3D Modeling</div>
+        </div>
+        <div class="hero-scroll-hint reveal reveal-delay-4">
+          <span class="scroll-line" aria-hidden="true"></span>
+          Scroll
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         PROJECTS SECTION
+         ============================== -->
+    <section class="home-projects" aria-labelledby="projects-heading">
+      <div class="section-header">
+        <span class="section-number reveal">01</span>
+        <h2 class="section-title reveal reveal-delay-1" id="projects-heading">Selected Works</h2>
+        <a href="project-yomap.html" class="section-link reveal reveal-delay-2">View All</a>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- Project Card 1: Mm.Bread -->
+        <a href="project-mmbread.html" class="project-card reveal" aria-label="View Mm.Bread project">
+          <div class="img-wrap project-card-img">
+            <img src="img/placeholder2.png" alt="Mm.Bread Screenshot" loading="lazy">
+          </div>
+          <div class="project-card-meta">
+            <span class="project-card-tag">Web Development</span>
+            <span class="project-card-year">2023</span>
+          </div>
+          <h3 class="project-card-title">Mm.Bread 瑪利MAMA</h3>
+          <p class="project-card-desc">不只是電商，更是一場關於社會責任的數位轉型實踐。</p>
+        </a>
+
+        <!-- Project Card 2: YoMap -->
+        <a href="project-yomap.html" class="project-card reveal reveal-delay-2" aria-label="View YoMap project">
+          <div class="img-wrap project-card-img">
+            <img src="img/placeholder1.png" alt="YoMap Screenshot" loading="lazy">
+          </div>
+          <div class="project-card-meta">
+            <span class="project-card-tag">Mobile App</span>
+            <span class="project-card-year">2025</span>
+          </div>
+          <h3 class="project-card-title">雲座標之空間資訊應用</h3>
+          <p class="project-card-desc">重新定義校園導航的維度，在 Flutter 與 Blender 之間建構連結。</p>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-copy">© 2026 友柔 Yoei. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="project-yomap.html">雲座標之空間資訊應用</a></li>
+      <li><a href="project-mmbread.html">Mm.Bread</a></li>
+    </ul>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

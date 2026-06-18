@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mm.Bread 瑪利MAMA — 友柔 Yoei Portfolio</title>
+  <meta name="description" content="Mm.Bread 瑪利MAMA 手作麵包公益電子商務系統：幫助身心障礙青年自立的響應式網站。" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <style>
+    :root {
+      --color-bg: #fdfdfc; /* 柔和的米白背景 */
+      --color-surface: #f9f9f7; /* 區塊的背景色 */
+      --color-ink: #2c2c2c; /* 更深、高對比的文字顏色 */
+      --color-ink-muted: #666; /* 提高可讀性的輔助文字顏色 */
+      --color-ink-light: #999; /* 標籤的淺色文字 */
+      --color-border: #e9e9e9; /* 更細緻的邊框顏色 */
+      --color-accent: #c8a96e; /* 維持原有的金色調 */
+    }
+
+    /* Page-specific accent for this project */
+    .mmbread-accent { color: #c8a96e; }
+
+    .role-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .role-item {
+      border-top: 1px solid var(--color-border);
+      padding-top: 1rem;
+    }
+
+    .role-item-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-ink-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .role-item-value {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--color-ink);
+      line-height: 1.5;
+    }
+
+    .poster-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: var(--spacing-md);
+    }
+
+    .poster-item {
+      aspect-ratio: 2/3;
+    }
+
+    @media (max-width: 768px) {
+      .role-grid { grid-template-columns: 1fr 1fr; }
+      .poster-grid { grid-template-columns: 1fr 1fr; }
+      .asymmetric-row {
+        flex-direction: column !important;
+      }
+      .asymmetric-row-right {
+        flex-direction: column-reverse !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .role-grid { grid-template-columns: 1fr; }
+      .poster-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true"></div>
+
+  <!-- Page Loader -->
+  <div class="page-loader" aria-hidden="true">
+    <span class="loader-text">Mm.Bread</span>
+  </div>
+
+  <!-- Page Transition -->
+  <div class="page-transition slide-in" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Yoei Home">友柔 Yoei</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project-mmbread.html">Mm.Bread</a></li>
+      <li><a href="project-yomap.html">雲座標之空間資訊應用</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="nav-overlay" role="dialog" aria-label="Mobile menu">
+    <ul class="nav-overlay-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project-mmbread.html">Mm.Bread</a></li>
+      <li><a href="project-yomap.html">雲座標之空間資訊應用</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ==============================
+         PROJECT HERO
+         ============================== -->
+    <header class="project-hero" aria-labelledby="mmbread-title">
+      <div>
+        <a href="index.html" class="back-link reveal">Back to Home</a>
+        <div class="project-hero-meta reveal reveal-delay-1">
+          <span class="project-hero-tag">Web Development</span>
+          <span class="project-hero-year">2023</span>
+        </div>
+        <h1 class="project-hero-title reveal reveal-delay-2" id="mmbread-title">
+          Mm.Bread<br />
+          <span style="font-size:0.55em; font-weight:400; font-style:italic; letter-spacing:0.02em;">瑪利MAMA手作麵包</span>
+        </h1>
+        <p class="project-hero-subtitle reveal reveal-delay-3">公益電子商務響應式系統</p>
+      </div>
+
+      <div class="img-wrap project-hero-image reveal-right" style="transform: rotate(-3deg);">
+        <img src="img/placeholder2.png" alt="Mm.Bread 網站全景" style="width:100%; height:100%; object-fit:cover;">
+      </div>
+    </header>
+
+    <!-- ==============================
+         PROJECT BODY
+         ============================== -->
+    <div class="project-body">
+
+      <!-- Project Info Grid -->
+      <div class="role-grid reveal">
+        <div class="role-item">
+          <p class="role-item-label">My Role</p>
+          <p class="role-item-value">網站架構 &amp; 美編<br />新功能開發<br />海報 &amp; 計畫書</p>
+        </div>
+        <div class="role-item">
+          <p class="role-item-label">Client</p>
+          <p class="role-item-value">瑪利亞社會福利基金會<br />Maria Social Welfare Foundation</p>
+        </div>
+        <div class="role-item">
+          <p class="role-item-label">Tools Used</p>
+          <p class="role-item-value">VS Code · XAMPP<br />Photoshop · Procreate · Canva</p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Alternating Images Layout -->
+      <div class="project-asymmetric-grid reveal" style="display: flex; flex-direction: column; gap: 4rem; margin: 4rem 0;">
+        
+        <!-- Image 1 -->
+        <div class="asymmetric-row asymmetric-row-left" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+          <div class="img-wrap project-image-tall polaroid-image focal-zoom" style="flex: 1; min-width: 250px; aspect-ratio: 16/10; position: relative;">
+            <div class="vertical-label">SYSTEM_INTERFACE_V1</div>
+            <img src="img/mm_web.png" alt="Mm.Bread 主頁面截圖" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
+          <div style="flex: 1; min-width: 250px; padding: 2rem; background: var(--color-surface); border-radius: 0.25rem;">
+            <h3 style="margin-bottom: 1rem; color: var(--color-ink);">系統首頁介面</h3>
+            <p style="font-size: 0.9rem; line-height: 1.8; color: var(--color-ink-muted);">直觀的電子商務介面設計，讓訪客能快速找到所需的手作麵包，提升整體的購物與瀏覽體驗。</p>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="asymmetric-row asymmetric-row-right" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+          <div style="flex: 1; min-width: 250px; padding: 2rem; background: var(--color-surface); border-radius: 0.25rem;">
+            <h3 style="margin-bottom: 1rem; color: var(--color-ink);">熱門商品排行榜</h3>
+            <p style="font-size: 0.9rem; line-height: 1.8; color: var(--color-ink-muted);">根據每月銷量自動更新熱門排名，協助管理者掌握銷售趨勢，並為顧客提供購買參考。</p>
+          </div>
+          <div class="img-wrap project-image-tall polaroid-image focal-zoom" style="flex: 1; min-width: 250px; aspect-ratio: 16/10; position: relative;">
+            <div class="vertical-label">RANKING_FEATURE</div>
+            <img src="img/mm_good.png" alt="商品排行榜功能截圖" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="asymmetric-row asymmetric-row-left" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+          <div class="img-wrap project-image-tall polaroid-image focal-zoom" style="flex: 0.6; min-width: 200px; aspect-ratio: 4/3; position: relative; overflow: hidden;">
+            <div class="vertical-label">GOOGLE_MAPS_API</div>
+            <img src="img/mm_map.png" alt="瑪莉媽媽地圖圖標彩蛋截圖" style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.6); transform-origin: center center;" loading="lazy">
+          </div>
+          <div style="flex: 1; min-width: 250px; padding: 2rem; background: var(--color-surface); border-radius: 0.25rem;">
+            <h3 style="margin-bottom: 1rem; color: var(--color-ink);">地圖客製化圖標</h3>
+            <p style="font-size: 0.9rem; line-height: 1.8; color: var(--color-ink-muted);">整合 Google Maps API，並繪製了專屬的「瑪莉媽媽」客製化地圖圖標，增加品牌溫度與細節感。</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Achievements -->
+      <section class="project-section" aria-labelledby="mmbread-achievements">
+        <div class="divider-short reveal"></div>
+        <p class="project-section-label reveal">Achievements</p>
+        <h2 class="project-section-title reveal reveal-delay-1" id="mmbread-achievements">
+          三個讓我驕傲的成果
+        </h2>
+
+        <ul class="achievement-list" aria-label="Project achievements">
+          <li class="achievement-item reveal">
+            <span class="achievement-num">01</span>
+            <div class="achievement-text achievement-number-bg" data-number="01">
+              <strong>實際售賣成果</strong>
+              <p>
+                網站上線後歷經兩次實際售賣活動，顧客能夠成功完成線上訂購流程，
+                工作人員的訂單整理時間大幅縮短，真正解決了原本的痛點。
+              </p>
+            </div>
+          </li>
+          <li class="achievement-item reveal reveal-delay-1">
+            <span class="achievement-num">02</span>
+            <div class="achievement-text achievement-number-bg" data-number="02">
+              <strong>自我突破與跨域學習</strong>
+              <p>
+                雖然就讀資管系，但程式碼編輯一直是我的弱項。
+                接下這個任務後，我在幾天內快速熟悉了開發環境，
+                最終能夠獨立開發功能。這次突破讓我對自己有了全新的認識。
+              </p>
+            </div>
+          </li>
+          <li class="achievement-item reveal reveal-delay-2">
+            <span class="achievement-num">03</span>
+            <div class="achievement-text achievement-number-bg" data-number="03">
+              <strong>Google Maps API 的一週攻克</strong>
+              <p>
+                Google Maps API 的整合比想像中複雜得多。我花了整整一週查資料、看影片、反覆測試，
+                最終完美地將地圖展示出來，還在上面加上了客製化圖標——
+                這是我最深的成就感來源。
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- href="project-yomap.html" style="
+          display:flex; flex-direction:column; align-items:flex-end; gap:0.5rem;
+          text-decoration:none; color:inherit;
+        " class="reveal">ptont-s:ct-transform:uppercase; color:var(--color-ink-muted);">Next Project</span>
+          <span style="font-family:var(--font-serif); font-size:clamp(1.5rem, 4vw, 2.5rem); font-weight:700; color:var(--color-ink);">YoMap →</span>
+        </a
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-copy">© 2026 友柔 Yoei. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project-yomap.html">雲座標之空間資訊應用</a></li>
+    </ul>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
